@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+        }
+
+        #content {
+            width: 600px;
+            margin: 0 auto;
+            background-color: orange;
+        }
+
+        .blue {
+            background-color: red;
+        }
+
+        .red {
+            background-color: blue;
+        }
+
+        .padding {
+            padding: 20px;
+        }
+
+        .padding-sm {
+            padding: 10px;
+        }
+
+        @media only screen and (max-width: 640px) {
+            table[class*=container],
+            table[class*=row] td[class*=column] { 
+                width: 480px !important;
+            }
+
+            table[class*=row] td[class*=column] {
+                display: block;
+                -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            table[class*=container],
+            table[class*=row] td[class*=column] { 
+                width: 320px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="0" class="container" cellspacing="0" border="0" width="600" id="content">
+        <tr>
+            <td>
+                <table class="container" cellpadding="0" cellspacing="0" border="0" align="left">
+                    <tr>
+                        <td>    
+                            <table class="row">
+                                <tr>
+                                    <td class="column red padding">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quo labore sint quibusdam odit distinctio eveniet assumenda dolorum perferendis reiciendis rem expedita repudiandae nemo aspernatur esse laboriosam consequatur doloribus quidem.</p>   
+                                    </td>
+                                    <td class="column blue padding-sm">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quo labore sint quibusdam odit distinctio eveniet assumenda dolorum perferendis reiciendis rem expedita repudiandae nemo aspernatur esse laboriosam consequatur doloribus quidem.</p>   
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        <tr>
+    </table>
+</body>
+</html>

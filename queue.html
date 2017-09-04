@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+
+            /**
+             * CSS Reset - Starter Styles Which Help Improve Consistency Across Platforms
+             */
+
+            #outlook a{padding:0}body,html{height:100%}body{width:100%!important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0}.ExternalClass,.ExternalClass div,.ExternalClass font,.ExternalClass p,.ExternalClass span,.ExternalClass td{line-height:100%}#backgroundTable{width:100%!important;line-height:100%!important;margin:0;padding:0}img{outline:0;text-decoration:none;-ms-interpolation-mode:bicubic;vertical-align:middle}a img{border:none}.image_fix{display:block}table td{border-collapse:collapse;vertical-align:top}table{border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;}#wrapper,body,html{background-color:#FFF;width:100%}body,html,table{text-align:left}.ExternalClass,blockquote,label,p,pre{margin:0 0 1em}
+
+            /* Core Styles */
+
+            html, body, #wrapper {
+                background-color: white;
+                font-size: 14px;
+            }
+
+            html, body, table {
+                font-family: helvetica, arial, sans-serif;
+                line-height: 1.625;
+                color: #111111;
+            }
+
+            .container {
+                width: 640px;
+                margin: 0 auto;
+                text-align: left;
+            }
+
+            .row {
+                mso-table-lspace:0;
+                mso-table-rspace:0;
+            }
+
+            /* Spacing Reset */
+
+            p, blockquote, ul, ol, dl, table, pre { margin-top: 0; margin-bottom: 1em; }
+
+            hr, .hr {
+                display: block;
+                height: 1px;
+                background: none;
+                border-top: solid 1px #ddd;
+                width:100%;
+                margin: 1.5em 0;
+            }
+
+            /* Headings */
+
+            h1, h2, h3, h4, h5, h6,
+            .h1, .h2, .h3, .h4, .h5, .h6 {
+                font-family: inherit;
+                font-weight: 500;
+                line-height: 1.1;
+                color: inherit;
+                margin-top: 1em;
+                margin-bottom: 15px;
+            }
+
+            h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child,
+            .h1:first-child, .h2:first-child, .h3:first-child, .h4:first-child, .h5:first-child, .h6:first-child {
+                margin-top: 0;
+            }
+
+            h1, .h1 { font-size: 2.51em; }
+            h2, .h2 { font-size: 2.15em; }
+            h3, .h3 { font-size: 1.71em; }
+            h4, .h4 { font-size: 1.28em; }
+            h5, .h5 { font-size: 1em; }
+            h6, .h6 { font-size: .85em; }
+
+            /* Links */
+
+            a, a:active, a:visited         { color: #428BCA; }
+            h1 a,h2 a,h3 a,h4 a,h5 a,h6 a  { color: #428BCA; }
+
+            /* Alignment Classes */
+
+            .text-left   { text-align: left; }
+            .text-right  { text-align: right; }
+            .text-center { text-align: center;}
+
+            .align-top    { vertical-align: top; }
+            .align-bottom { vertical-align: bottom; }
+            .align-middle { vertical-align: middle; }
+
+            /* Blockquote */
+            
+            blockquote {
+                padding: 10px 20px;
+                margin: 0 0 20px;
+                font-size: 17.5px;
+                border-left: 5px solid #EEE;
+            }
+
+            blockquote.blockquote-reverse {
+                padding-right: 15px;
+                padding-left: 0;
+                border-right: 5px solid #EEE;
+                border-left: 0;
+                text-align: right;
+            }
+
+            blockquote p:last-child {
+                margin-bottom: 0;
+            }
+
+            /* List Classes */
+            
+            .list-unstyled {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            dt {
+                font-weight: 700;
+            }
+
+            dd {
+                margin-left: 0;
+            }
+
+            /* Code and Pre */
+            
+            pre, code {
+                font: .85em Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+                border: 0;
+            }
+
+            pre {
+                margin: 0;
+                margin-bottom: 1.5em;
+                background-color: #eee;
+                padding: 1em;
+                color: #666;
+                overflow: auto;
+            }
+
+            code {
+                background-clip: padding-box;
+                background-color: #eee;
+                color: #666;
+                padding: .125em .25em;
+                border-radius: 3px;
+            }
+
+            /* Tables */
+            
+            table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } 
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                padding: 0;
+                margin: 0;
+            }
+
+            .table {
+                width: 100%;
+                background-color: transparent;
+            }
+
+            .table > thead > tr > th,
+            .table > tbody > tr > th,
+            .table > tfoot > tr > th,
+            .table > thead > tr > td,
+            .table > tbody > tr > td,
+            .table > tfoot > tr > td {
+                padding: 8px;
+                vertical-align: top;
+                border-top: 1px solid #DDD;
+            }
+
+            .table-striped > tbody > tr:nth-child(odd) > td,
+            .table-striped > tbody > tr:nth-child(odd) > th {
+                background-color: #F9F9F9;
+            }
+
+            .table-bordered {
+                border: 1px solid #DDD;
+            }
+
+            .table-condensed > thead > tr > th,
+            .table-condensed > tbody > tr > th,
+            .table-condensed > tfoot > tr > th,
+            .table-condensed > thead > tr > td,
+            .table-condensed > tbody > tr > td,
+            .table-condensed > tfoot > tr > td {
+                padding: 5px;
+            }
+
+            /* Utility Classes */
+
+            .text-primary          { color: #428BCA; }
+            .text-muted, .gray     { color: #999999; }
+            .text-success, .green  { color: #3C763D; }
+            .text-info, .blue      { color: #31708F; }
+            .text-warning, .yellow { color: #8A6D3B; }
+            .text-danger, .red     { color: #A94442; }
+
+            .bg-primary             { background-color: #428BCA; color: white; }
+            .bg-muted, .bg-gray     { background-color: #fafafa; }
+            .bg-success, .bg-green  { background-color: #DFF0D8; }
+            .bg-info, .bg-blue      { background-color: #D9EDF7; }
+            .bg-warning, .bg-yellow { background-color: #FCF8E3; }
+            .bg-danger, .bg-red     { background-color: #F2DEDE; }
+
+            .serif      { font-family: Georgia, "Times New Roman", Times, serif;}
+            .sans-serif { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+            .monospace  { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+            
+            small, .small { font-size: 0.75em; }
+            .secondary    { font-size: 0.85em; }
+            .large        { font-size: 1.15em; }
+            .xl           { font-size: 1.50em; }
+
+            .padding      { padding: 20px; }
+            .padding-sm   { padding: 10px; }
+            .padding-lg   { padding: 40px; }
+            .padding-v    { padding: 20px 0; }
+            .padding-h    { padding: 0 20px; }
+            .padding-v-sm { padding: 10px 0; }
+            .padding-h-sm { padding: 0 10px; }
+            .padding-v-lg { padding: 40px 0; }
+            .padding-h-lg { padding: 0 40px; }
+
+            .margin      { margin: 20px; }
+            .margin-sm   { margin: 10px; }
+            .margin-lg   { margin: 40px; }
+            .margin-v    { margin: 20px 0; }
+            .margin-h    { margin: 0 20px; }
+            .margin-v-sm { margin: 10px 0; }
+            .margin-h-sm { margin: 0 10px; }
+            .margin-v-lg { margin: 40px 0; }
+            .margin-h-lg { margin: 0 40px; }
+
+
+            /* Media Styles */
+            
+            *[class*=col-] { min-height: 1px; }
+            
+            .col-1  { width: 8.333%; }
+            .col-2  { width: 16.666%; }
+            .col-3  { width: 25%; }
+            .col-4  { width: 33.333%; }
+            .col-5  { width: 41.666%; }
+            .col-6  { width: 50%; }
+            .col-7  { width: 58.333%; }
+            .col-8  { width: 66.666%; }
+            .col-9  { width: 75%; }
+            .col-10 { width: 83.333%; }
+            .col-11 { width: 91.666%; }
+            .col-12 { width: 100%; }
+
+            @media only screen and (max-width: 640px) {
+                table[class*=container],
+                table[class*=row] td[class*=col-] { 
+                    width: 480px !important;
+                }
+
+                table[class*=row] td[class*=col-] {
+                    display: block;
+                    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+                }
+            }
+
+            @media only screen and (max-width: 480px) {
+                table[class*=container],
+                table[class*=row] td[class*=col-] { 
+                    width: 320px !important;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+        <!-- WRAPPER -->
+        <table id="wrapper" border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+            <tbody>
+                <tr>
+                    <td>
+                        <br/>
+
+                        <!-- CONTENT -->
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" id="content" class="container" width="640">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="row" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="col-8 padding">
+                                                    <h1>Lorem ipsum dolor sit amet.</h1>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, illo, quidem at doloribus porro assumenda magni exercitationem voluptates aspernatur suscipit id iure molestias perferendis. Culpa, quos non maiores quas quae.</p>
+                                                    <p>Voluptate, id, aspernatur, blanditiis maxime illum sit ea quidem voluptatibus commodi dolorem atque unde incidunt vero natus suscipit reprehenderit soluta ipsam. Ad, aliquam molestiae numquam asperiores quos debitis neque perspiciatis.</p>
+                                                    <p>Consequatur, eos facilis eius maxime dignissimos nobis culpa alias veritatis consectetur assumenda. Necessitatibus, expedita, placeat incidunt ex autem quis molestias saepe nam. Nostrum, voluptatibus cum dolore dolores veniam iusto autem.</p>
+                                                </td>
+                                                <td class="col-4 padding">
+                                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, illo, quidem at doloribus porro assumenda magni exercitationem voluptates aspernatur suscipit id iure molestias perferendis. Culpa, quos non maiores quas quae.</p>
+                                                    <p class="hr"></p>
+
+                                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, illo, quidem at doloribus porro assumenda magni exercitationem voluptates aspernatur suscipit id iure molestias perferendis. Culpa, quos non maiores quas quae.</p>
+                                                    <p class="hr"></p>
+
+                                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, illo, quidem at doloribus porro assumenda magni exercitationem voluptates aspernatur suscipit id iure molestias perferendis. Culpa, quos non maiores quas quae.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- END CONTENT -->
+
+                        <br/><br/>
+
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" id="footer" class="container secondary text-muted text-center" width="640">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, nobis, reprehenderit atque vitae autem mollitia tenetur quidem eius accusantium culpa quos labore quo id fugit dolorem odio quas distinctio sunt?</p>
+                                        <p>Copryight 2014</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- END WRAPPER -->
+
+    </body>
+</html>
